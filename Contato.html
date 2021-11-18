@@ -1,0 +1,246 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Seututor.com</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/estilo.css">
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">			
+			<link rel="stylesheet" href="css/jquery-ui.css">			
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+			
+			<link rel="stylesheet" type="text/css" href="css/contato.css">
+			<script src="js/jquery-3.4.1.min.js"></script>
+			<script src="js/jquery.mask.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#phone").mask("(00)00000-0000")
+				});
+			</script>
+			
+
+		</head>
+		<body>	
+		  <header id="header" id="home">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><img src="img/logo.png" width="auto" height="60px;" /></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+					  <li><a href="index.html">Home</a></li>
+			          <li><a href="Sobre nós.html">Sobre nós</a></li>
+			          <li><a href="Tutores.html">Tutores</a></li>
+			          <li><a href="Candidate-se.html">Candidate-se</a></li>
+			          <li><a href="Contato.html">Contato</a></li>
+			          
+			        </ul>
+		      </nav><!-- #nav-menu-container -->			    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+			  
+			<!-- start banner Area -->
+			<section class="banner-area relative about-banner" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 id="about-title">
+								Contate-nos			
+							</h1>	
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->				  
+
+			<!-- Start contact-page Area -->
+			<div class="container-contact100">
+				<div class="wrap-contact100">
+					<form class="contact100-form validate-form" method="post" action="contato.php">
+						<span class="contact100-form-title"> Envie uma mensagem
+						</span>
+
+						<label class="label-input100" for="first-name">Informe seu nome *</label>
+						<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+							<input id="name" class="input100" type="text" name="nome" placeholder="Primeiro nome" minlength="3" maxlength="15" onkeypress="return letras()" required oninvalid="this.setCustomValidity('Insira um nome válido.')" onchange="try{setCustomValidity('')}catch(e){}">
+							<span class="focus-input100" maxlength="15"></span>
+						</div>
+						<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+							<input id="sname" class="input100" type="text" name="sobrenome" placeholder="Sobrenome" minlength="5" maxlength="15" onkeypress="return letras()" required oninvalid="this.setCustomValidity('Insira um sobrenome válido.')" onchange="try{setCustomValidity('')}catch(e){}">
+							<span class="focus-input100"></span>
+						</div>
+
+						<label class="label-input100" for="email">Informe seu e-mail *</label>
+						<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+							<input id="email" class="input100" type="email" name="email" placeholder="example@email.com" required oninvalid="this.setCustomValidity('O campo precisa ser preenchido.')" onchange="try{setCustomValidity('')}catch(e){}">
+							<span class="focus-input100"></span>
+						</div>
+
+						<label class="label-input100" for="phone">Informe seu telefone</label>
+						<div class="wrap-input100">
+							<input id="phone" class="input100" type="text" name="tel" placeholder="(00) 00000-0000" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="15" maxlength="15" required oninvalid="this.setCustomValidity('O campo precisa ter 11 digitos. EX. (00)00000-0000)')" onchange="try{setCustomValidity('')}catch(e){}">
+							<span class="focus-input100"></span>
+						</div>
+
+						<label class="label-input100" for="message">Deixe sua mensagem *</label>
+						<div class="wrap-input100 validate-input" data-validate = "Message is required">
+							<textarea id="message" class="input100" name="msg" placeholder="" maxlength="15" required oninvalid="this.setCustomValidity('Campo não preenchido.')" onchange="try{setCustomValidity('')}catch(e){}"></textarea>
+							<span class="focus-input100"></span>
+						</div>
+
+						<div class="container-contact100-form-btn">
+							<button class="contact100-form-btn" onclick="">
+								Send Message
+							</button>
+						</div>
+					</form>
+
+					<div class="contact100-more flex-col-c-m" style="background-image: linear-gradient(to right top, #000080, #003dab, #006acb, #0095e2, #00c0f3, #00c0f3, #00c0f3, #00c0f3, #0095e2, #006acb, #003dab, #000080);">
+
+						
+						<div class="title">
+							<label for=""><img src="img/placeholder.png" alt=""></label>
+							Endereço
+							<div class="txt">
+								Av. Estados Unidos, 20 - Comercio<br/>CEP: 40010-020<br/>SALVADOR - BAHIA
+							</div>
+						</div>
+						
+						<div class="title">
+							<label for=""><img src="img/share.png" alt=""></label>
+							Sociais<br/>
+							<div class="txt">
+								<label for=""><img src="img/instagram.png" alt=""></label>
+								@seututor<br>
+								<label for=""><img src="img/twitter.png" alt=""></label>
+								@seututor<br>	
+							</div>	
+						</div>
+						
+
+						
+						<div class="title">
+							<label for=""><img src="img/envelope.png" alt=""></label>
+							Suporte geral
+							<div class="txt">
+								contato@seututor.com
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="dropDownSelect1"></div>
+
+			<script type="text/javascript" language="javascript">
+				function Confirma(){
+					if(document.getElementById("name").value == ""){
+						alert('Por favor, preencha o campo nome');
+						document.getElementById("name").focus();
+						return false
+					}
+					if(document.getElementById("sname").value == ""){
+						alert('Por favor, preencha o campo sobrnome');
+						document.getElementById("sname").focus();
+						return false
+					}
+					if(document.getElementById("email").value == ""){
+						alert('Por favor, preencha o campo email');
+						document.getElementById("email").focus();
+						return false
+					}
+					if(document.getElementById("phone").value == ""){
+						alert('Por favor, preencha o campo telefone');
+						document.getElementById("phone").focus();
+						return false
+					}
+					if(document.getElementById("message").value == ""){
+						alert('Por favor, preencha o campo mensagem');
+						document.getElementById("message").focus();
+						return false
+					}
+				}
+			</script>
+			
+			<script>
+				$(".selection-2").select2({
+					minimumResultsForSearch: 20,
+					dropdownParent: $('#dropDownSelect1')
+				});
+			</script>
+
+			<script src="js/contato.js"></script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-23581568-13');
+			</script>
+			<!-- End contact-page Area -->
+
+			<!-- Start Footer Area -->
+			<section class="cta-two-area footer" style="background-image: linear-gradient(to right top, #ff9900, #ffac00, #ffbf00, #ffd200, #ffe500, #ffe500, #ffe500, #ffe500, #ffd200, #ffbf00, #ffac00, #ff9900); padding:5px; text-align: center;">
+				<img src="img/logo1.png" width="auto" height="100px;">
+				<p style="font-size: 10px; color: #fff; text-shadow:1px 2px 2px #000;">Copyright &copy; All rights reserved </p>
+			</section>
+			<!-- End  Footer Area -->	
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+    		<script src="js/jquery.tabs.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>									
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+			<script type="text/javascript">
+				function letras(){
+					tecla = event.keyCode;
+					if (tecla >= 48 && tecla <= 57){
+					    return false;
+					}else{
+					   return true;
+					}
+				}
+			</script>
+			
+		</body>
+	</html>

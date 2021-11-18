@@ -1,0 +1,139 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.banner-area {
+    background: url(../img/w1.jpg) right;
+    background-size: cover;
+}
+.banner-content {
+    text-align: left;
+    margin-top: 10px;
+}
+.banner-content h1{
+	color: #ff9900;
+}.banner-content p{
+	font-size: 18px;
+	padding: 5px;
+	color: #fff;
+	text-shadow: 1px 2px 2px #000;
+}
+.cta-one-area{
+	margin-top: 50px;
+}
+.feature-area{
+	font-size: 14px; 
+	color:  color: #000080;;
+}
+.details h4{
+	color:#ff9900;	 
+}
+.details p{
+	text-align: justify;
+	color: #000080;
+}
+.mb-10{
+	color: #33ccff;
+}
+#bt{
+	color: #ff9900;
+}
+
+/*-------------------about-----------------*/
+
+#one{
+	background: url(../img/one.jpg);
+	width: 300px;
+	height: 224px;
+	margin-left: 7%;
+	margin-top: 20px;
+	border-radius: 20px 1px 20px 1px;
+}
+#two{
+	height: 300px;
+	background: url(../img/two.jpg);
+	width: 300px;
+	height: 224px;
+	margin-left: 7%;
+	margin-top: 20px;
+	border-radius: 20px 1px 20px 1px;
+}
+#three{
+	height: 300px;
+	background: url(../img/three.jpg);
+	width: 300px;
+	height: 224px;
+	margin-left: 8%;
+	margin-top: 20px;
+	border-radius: 20px 1px 20px 1px;
+}
+.txt{
+	text-align: justify;
+	margin-left: 27%;
+	margin-top:5%;
+	width: 180px;
+	color: #fff;
+}
+.txt1{
+	text-align: center;
+	margin-top: 4%;
+	margin-left: 25%;
+	width: 180px;
+	color: #fff;
+}
+#title{
+	text-align: center;
+	width: 100%;
+	height: 5%;
+	margin: 20px;
+}
+#title h1{
+	color: #000080;
+}
+
+#info h1, #about-title{
+	color: #ff9900;
+}
+#info p{
+	color: #000080;
+	text-align: justify;
+}
+
+/*------------Candidate-se---------------*/
+#fundo{
+	width: 100%;
+	background: url(../img/preto.jpg);
+}
+
+/*-------------------------------TUTORES--------------------------------*/
+.info{
+	width: 250px;
+	text-align: left;
+}
+.info a{
+	padding: 0px;
+}
+ 
+/*-----------------------------CONTATO----------------------------------*/ 
+
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

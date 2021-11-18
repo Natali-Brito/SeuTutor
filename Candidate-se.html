@@ -1,0 +1,225 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Seututor.com</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">			
+			<link rel="stylesheet" href="css/jquery-ui.css">			
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+			<link rel="stylesheet" href="css/estilo.css">
+			<link rel="stylesheet" href="css/style.css">
+
+		</head>
+		<body>	
+		  <header id="header" id="home">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><img src="img/logo.png" width="auto" height="60px;" /></a>
+			      </div>
+			      <nav id="nav-menu-container">
+		        <ul class="nav-menu">
+		          <li><a href="index.html">Home</a></li>
+		          <li><a href="Sobre nós.html">Sobre nós</a></li>
+		          <li><a href="Tutores.html">Tutores</a></li>
+		          <li><a href="Candidate-se.html">Candidate-se</a></li>
+		          <li><a href="Contato.html">Contato</a></li>
+		          
+		        </ul>
+		      </nav><!-- #nav-menu-container -->			    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+			  
+			<!-- start banner Area -->
+			<section class="banner-area relative about-banner" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 id="about-title">
+								Candidate-se e faça parte do nosso time			
+							</h1>	
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start feature Area -->
+			<div id="fundo">
+				<section class="feature-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="single-feature">
+									<div class="title">
+										<h4>Passo 1</h4>
+									</div>
+									<div class="desc-wrap">
+										<p>
+											Encontre o tutor perfeito.<br> <br>                          
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="single-feature">
+									<div class="title">
+										<h4>Passo 2</h4>
+									</div>
+									<div class="desc-wrap">
+										<p>
+											Entre em contato com seu tutor e agende a sua aula.
+										</p>									
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="single-feature">
+									<div class="title">
+										<h4>Passo 3</h4>
+									</div>
+									<div class="desc-wrap">
+										<p>
+											Faça aulas on-line naquele tempo extra que sobra na sua agenda.
+										</p>									
+									</div>
+								</div>
+							</div>												
+						</div>
+					</div>	
+			</section>
+		<!-- End feature Area -->	
+		<!-- Start search-course Area -->
+		
+			<div class="inner">
+				<div class="image-holder">
+					
+				</div>
+				<form method="post" action="cadastro.php" enctype="multipart/form-data">
+					<h3>CADASTRE-SE</h3>
+					<div class="form-group"> <!--nome-->
+						<input type="text" placeholder="Nome" class="form-control" name="nome" minlength="3" maxlength="15" onkeypress="return letras()" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}"><br>
+						<input type="text" placeholder="Sobrenome" class="form-control" name="sobrenome" minlength="5" maxlength="15" onkeypress="return letras()" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+					</div>
+					<div class="form-group"> <!--CPF e nasc-->
+						<input id="cpf" type="text" placeholder="CPF" class="form-control" name="cpf" minlength="14" maxlength="14" required oninvalid="this.setCustomValidity('O campo precisa ter 11 digitos. EX. 000.000.000-00')" onchange="try{setCustomValidity('')}catch(e){}">
+						<input type="date" placeholder="Sobrenome" class="form-control" name="data" required oninvalid="this.setCustomValidity('Informe sua datas de nascimento.')" onchange="try{setCustomValidity('')}catch(e){}">
+					</div>
+					<div class="form-group"> <!--tel e skype-->
+						<input id="phone" type="text"  class="form-control" placeholder="Telefone" name="tel" minlength="14" maxlength="14" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required oninvalid="this.setCustomValidity('O campo precisa ter 11 digitos. EX. (00)00000-0000)')" onchange="try{setCustomValidity('')}catch(e){}"onchange="try{setCustomValidity('')}catch(e){}">
+						<input type="text" placeholder="Skype" class="form-control" name="skype" maxlength="14" required oninvalid="this.setCustomValidity('Insira um nome Skype, email ou telefone.')" onchange="try{setCustomValidity('')}catch(e){}">
+					</div>
+					<div class="form-wrapper"><!--email-->
+						<input type="email" placeholder="Email" class="form-control" name="email">
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Endereço" class="form-control" name="endereco" maxlength="100" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+					</div>
+					<div class="form-wrapper">
+						<label for="foto">Foto:</label>
+						<input  type="file"  id="foto" name="foto" /><br><br>
+					</div>
+					<div class="form-wrapper" class="checkbox">
+						<label for="">Dias disponiveis:</label><br><br>
+						<input type="checkbox" name="dia[]" value="Dom">Dom
+						<input type="checkbox" name="dia[]" value="Seg">Seg
+  						<input type="checkbox" name="dia[]" value="Ter">Ter
+  						<input type="checkbox" name="dia[]" value="Qua">Qua
+  						<input type="checkbox" name="dia[]" value="Qui">Qui
+  						<input type="checkbox" name="dia[]" value="Sex">Sex
+  						<input type="checkbox" name="dia[]" value="Sab">Sab<br><br>
+					</div>
+					<div class="form-wrapper" class="checkbox">
+						<label for="">Turno das aulas:</label><br><br>
+						<input type="checkbox" name="turno[]" value="Matutino">Matutino
+						<input type="checkbox" name="turno[]" value="Vespertino">Vespertino
+  						<input type="checkbox" name="turno[]" value="Noturno">Noturno<br><br>
+					</div>
+					
+					<div class="form-wrapper">
+						<label for="">Fale sobre você:</label>
+						<textarea name="sobre"></textarea>
+					</div>
+					
+					
+					<div class="form-wrapper">
+
+					</div>
+					
+					<button id="btn" onclick="clone()">CADASTRAR
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+			<!-- End search-course Area -->		
+			
+		<!-- Start Footer Area -->
+			<section class="cta-two-area footer" style="background-image: linear-gradient(to right top, #ff9900, #ffac00, #ffbf00, #ffd200, #ffe500, #ffe500, #ffe500, #ffe500, #ffd200, #ffbf00, #ffac00, #ff9900); padding:5px; text-align: center;">
+				<img src="img/logo1.png" width="auto" height="100px;">
+				<p style="font-size: 10px; color: #fff; text-shadow:1px 2px 2px #000;">Copyright &copy; All rights reserved </p>
+			</section>
+		<!-- End  Footer Area -->	
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+    		<script src="js/jquery.tabs.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>									
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>
+			<script src="js/jquery-3.4.1.min.js"></script>
+			<script src="js/jquery.mask.min.js"></script>	
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#phone").mask("(00)00000-0000")
+					$("#cpf").mask("000.000.000-00")
+
+				});
+			</script>
+			<script type="text/javascript">
+				function letras(){
+					tecla = event.keyCode;
+					if (tecla >= 48 && tecla <= 57){
+					    return false;
+					}else{
+					   return true;
+					}
+				}
+			</script>
+			<script src="js/divs.js"></script>	
+		</body>
+	</html>
